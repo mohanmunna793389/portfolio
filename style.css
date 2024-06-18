@@ -1,0 +1,217 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+   
+    background-color: #333;
+    color:white;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+    text-align: center;
+    padding: 2rem;
+}
+
+#home {
+    background: #f4f4f4;
+    padding: 5rem 2rem;
+    text-align: center;
+    background-color: #333;
+   
+   
+}
+.about-section {
+    text-align: center;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Ensures content wraps on smaller screens */
+}
+
+.about-text {
+    max-width: 600px;
+    margin-right: 20px;
+    text-align: left;
+
+}
+
+.about-image img {
+    max-width: 200px;
+    border-radius: 90%;
+}
+/* Tech Stack section styles */
+.tech-stack-section {
+    text-align: center;
+}
+
+.tech-stack-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.tech {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tech img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    animation: rotate 5s linear infinite; /* Apply the rotate animation */
+}
+.content h1 {
+    font-size: 3rem;
+}
+
+.content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+form {
+    margin: 2rem 0;
+}
+
+form input {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+form .btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#projects {
+    padding: 2rem;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card {
+    background: teal;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: 300px;
+    text-align: left;
+    position: relative;
+    color:black;
+    
+}
+.card:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.card p {
+    margin-bottom: 1rem;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links a img {
+    width: 24px;
+    height: 24px;
+}
+#contact{
+    text-align: center;
+    background-color: black;
+    color:white
+}
+
+
+a {
+    color: #333;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    footer {
+        position: relative;
+    }
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
